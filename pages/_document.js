@@ -16,8 +16,8 @@ export default function Document() {
         />
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta property="og:url" content={`https://movses-portfolio.vercel.app/`} />
-        <link rel="canonical" href={`https://movses-portfolio.vercel.app/`} />
+        <meta property="og:url" content={`https://portfolio-movses.vercel.app/`} />
+        <link rel="canonical" href={`https://portfolio-movses.vercel.app/`} />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Movses Israyelyan" />
         <meta property="og:description" content={meta.description} />
