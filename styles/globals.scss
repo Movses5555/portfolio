@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.greeting {
+  min-width: 5px !important;
+}
+.social-links a:hover {
+  animation: pulse 1s;
+  transition: 0.4s ease;
+}
+$animationName: "swing";
+
+.text-animate {
+  display: inline-block;
+  opacity: 0;
+  animation-fill-mode: forwards !important;
+  min-width: 10px;
+  animation: bounceIn 1s 1s;
+}
+.text-animate-hover {
+  display: inline-block;
+  animation-fill-mode: both;
+  min-width: 10px;
+  &:hover {
+    animation: swing 1s;
+    color: #ff3298;
+  }
+}
+@for $i from 1 through 41 {
+  .text-animate._#{$i} {
+    animation-delay: #{$i / 10}s;
+  }
+}
+
+.timeline-items::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #2f363e;
+  left: calc(50% - 1px);
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+.timeline-item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+}
+.timeline-dot {
+  left: calc(50% - 12px);
+}
+
+@media (max-width: 767px) {
+  .timeline-items::before {
+    left: 7px;
+  }
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 37px;
+  }
+  .timeline-dot {
+    left: 0;
+  }
+}
