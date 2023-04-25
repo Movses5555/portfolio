@@ -10,10 +10,10 @@ const Work = () => {
   return (
     <div
       name="work"
-      className="pt-[120px] w-full md:min-h-screen  duration-200 ease-in bg-white text-black dark:bg-black dark:text-white"
+      className="pt-[80px] sm:pt-[120px] w-full md:min-h-screen  duration-200 ease-in bg-white text-black dark:bg-black dark:text-white"
     >
-      <div className="max-w-[1000px] pt-16 sm:pt-4 mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
+      <div className="max-w-[1000px] sm:pt-4 mx-auto p-4 flex flex-col justify-center w-full h-full">
+        <div className="pb-8 md:text-center">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
             Work
           </p>

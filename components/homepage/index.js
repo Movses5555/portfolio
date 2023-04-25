@@ -27,7 +27,7 @@ const Home = () => {
       name="home"
       className="w-full duration-200 ease-in h-screen dark:bg-black dark:text-white bg-white text-black"
     >
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+      <div className="max-w-[1000px] mx-auto px-4 flex flex-col justify-center h-full">
         <h4 className="text-lg leading-10">
           <AnimatedLetters
             letters={greet}

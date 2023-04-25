@@ -9,10 +9,10 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="pt-[80px] w-full h-screen duration-200 ease-in bg-white text-black dark:bg-black dark:text-white"
+      className="pt-[80px] w-full sm:min-h-screen duration-200 ease-in bg-white text-black dark:bg-black dark:text-white"
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full">
-        <div>
+        <div className="md:text-center">
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 ">
             Skills
           </p>

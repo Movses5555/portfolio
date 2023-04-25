@@ -7,7 +7,7 @@ import { experience } from "@/mocks/experience";
 function Timeline() {
   const { theme } = useContext(ThemeContext);
   return (
-    <section className="min-h-screen py-20 px-4">
+    <section className="min-h-screen py-8">
       <div className="timeline-items max-w-xl mx-auto flex-wrap flex relative">
         {experience.map((item, idx) => {
           return (
