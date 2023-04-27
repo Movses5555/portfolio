@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     name: "Adult member sites",
-    skills: ["React", "Redux", "PHP", "Laravel", "Node.js", "Tailwind", "Sass"],
+    skills: ["React", "Next.js", "Redux", "PHP", "Laravel", "Node.js", "Tailwind", "Sass"],
     live: "https://adultmembersites.com",
     img: "/images/projects/ams.png",
   },
